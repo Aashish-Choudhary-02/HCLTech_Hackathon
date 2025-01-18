@@ -3,7 +3,7 @@ const router = express.Router();
 const { verifyCredentials, getTrialProgress, getParticipantHealthData } = require('../models/admin');
 
 // Admin Login
-router.post('/login', async (req, res) => {
+router.post('/', async (req, res) => {
   const { email, password, role } = req.body;
 
   try {
